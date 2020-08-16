@@ -12,17 +12,18 @@ header{
     background-size: cover;
     background-position: center;
 }
-ul{
+header ul{
     float: right;
     list-style-type: none;
-    margin-top: 30px;
+    margin-top: 10px;
+    font-size: 20px;
 }
-ul li{
+header ul li{
     margin-top: 30px;
     display: inline-block;
 
 }
-ul li a{
+header ul li a{
     margin-top: 30px;
     text-decoration: none;
     color: #fff;
@@ -30,20 +31,28 @@ ul li a{
     border:1px solid transparent;
     transition:0.6s ease;
 }
-ul li a:hover{
+header ul li a:hover, header ul li a:focus{
     background-color:#fff;
     color:#000;
+    text-decoration: none;
 }
-ul li.active a{
+header ul li.active a{
     background-color:#fff;
     color:#000;
+    border-radius: 4px;
 
+}
+.bl:hover{
+    color:black;
+}
+header ul li a{
+    border-radius: 4px;
 
 }
 .logo img{
     margin-top:20px;
     float:left;
-    width:150px;
+    width:250px;
     height:auto;
 }
 .main{
@@ -90,12 +99,12 @@ ul li.active a{
 }
 #about h1{
     text-align: center;
-    color:#460e0e !important;
+    color:#000000 !important;
     padding-bottom: 10px;
 }
 #about h2{
     
-    color:#966214 !important;
+    color:#1b1b1b  !important;
     padding-bottom: 10px;
 }
 #about h1::after{
@@ -185,8 +194,14 @@ ul li.active a{
     color:#ccc;
 }
 .services .col-md-3:hover{
-    background:#86704C;
+    background:#86827c;
     color:#000;
+    cursor:pointer;
+    transition:0.7s;
+}
+.services .col-md-3 p:hover{
+    /* background:#86827c; */
+    color:#000000;
     cursor:pointer;
     transition:0.7s;
 }

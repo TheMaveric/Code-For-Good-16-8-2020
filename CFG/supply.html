@@ -19,7 +19,7 @@
         .container {
             padding-top: 20px;
             width: 80%;
-            margin-right: 0.8%;
+            margin-right: 5%;
         }
 
         @media (max-width: 765.8px) {
@@ -59,7 +59,6 @@
             position: fixed;
             width: 20%;
             height: 100%;
-            background-color: #f0f0f0;
             box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.16), 2px 0 10px 0 rgba(0, 0, 0, 0.12);
             z-index: 1;
             overflow: auto;
@@ -77,14 +76,16 @@
         }
 
         #side-nav-content a:focus, #side-nav-content a:hover {
-            background-color: #d5d5d5;
+            outline: 3px solid #ffffff;
+            outline-offset: -5px;
         }
 
         #side-nav-content a {
             padding: 3px 20px 3px 30px;
+            margin-top: 10px;
             display: block;
             font-size: 18px;
-            color: #000000;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -144,21 +145,22 @@
         <div class="collapse navbar-collapse text-right pr-2 pt-2 pt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="supply.html">Supply</a>
+                    <a class="nav-link" href="supply.html"><i class="fa fa-bar-chart"></i> Supply</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="demand.html">Demand</a>
+                    <a class="nav-link" href="demand.html"> <i class="fa fa-line-chart"></i> Demand</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 
-<body>
-    <div class="d-xs-none d-sm-none d-md-block" id="side-nav">
+<body style="background-color:#343a40!important">
+    <div class="d-xs-none d-sm-none d-md-block bg-secondary" id="side-nav">
         <div id="side-nav-content">
             <a href="#supply1">Number of Eggs Available per Person, per Year</a>
             <a href="#supply2">Number of Eggs Produced per Year in the Country</a>
@@ -168,10 +170,15 @@
     </div>
     <div class="container">
         <div id="supply1">
-            <h3>Number of Eggs Available per Person, per Year</h3>
+            <div>
+                <h3>
+                    <span class="bg-secondary rounded p-2 m-2 text-white">Number of Eggs Available per Person, per Year</span>
+                </h3>
+            </div>
+            
             <div class="row justify-content-around">
                 <div class="col-11">
-                    <div class='tableauPlaceholder' id='viz1597572856731' style='position: relative'><noscript><a
+                    <div class='tableauPlaceholder' id='viz1597572856731' style='position: relative ;'><noscript><a
                                 href='#'><img alt=' '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CF&#47;CFG2020&#47;Sheet2&#47;1_rss.png'
                                     style='border: none' /></a></noscript><object class='tableauViz'
@@ -199,7 +206,9 @@
     </div>
     <div class="container">
         <div id="supply2">
-            <h3>Number of Eggs Produced per Year in the Country</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Number of Eggs Produced per Year in the Country</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597574529204' style='position: relative'><noscript><a
@@ -229,7 +238,9 @@
     </div>
     <div class="container">
         <div id="supply3">
-            <h3 class="mb-3">Imports and Exports of Shell Eggs and Egg Powder per Year</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Imports and Exports of Shell Eggs and Egg Powder per Year</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597576680911' style='position: relative'><noscript><a
@@ -261,7 +272,9 @@
     </div>
     <div class="container">
         <div id="supply4">
-            <h3>Producer Price of a Single Egg</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Producer Price of a Single Egg</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597572726475' style='position: relative'><noscript><a
@@ -291,25 +304,25 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white">
+    <footer class=" text-white" style="background-color:#202020">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-11 col-md-4" id="quickLinks">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="supply.html"><i class="fas fa-cog"></i>Supply</a></li>
-                        <li><a href="demand.html"><i class="fas fa-list-alt"></i>Demand</a></li>
+                        <li><a href="index.html" style="color:white;"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="supply.html" style="color:white;"><i class="fas fa-cog"></i>Supply</a></li>
+                        <li><a href="demand.html" style="color:white;"><i class="fas fa-list-alt"></i>Demand</a></li>
                     </ul>
                 </div>
                 <div class="col-11 col-md-4" id="socialProfiles">
                     <h3>Social Profiles</h3>
                     <ul>
-                        <li><a href="https://www.facebook.com/SightandLife/"><i class="fab fa-facebook"></i>Facebook</a>
+                        <li><a href="https://www.facebook.com/SightandLife/" style="color:white;"><i class="fab fa-facebook"></i>Facebook</a>
                         </li>
-                        <li><a href="https://twitter.com/SightandLife"><i class="fab fa-twitter"></i>Twitter</a>
+                        <li><a href="https://twitter.com/SightandLife" style="color:white;"><i class="fab fa-twitter"></i>Twitter</a>
                         </li>
-                        <li><a href="https://www.instagram.com/sightandlife/"><i
+                        <li><a href="https://www.instagram.com/sightandlife/" style="color:white;"><i
                                     class="fab fa-instagram"></i>Instagram</a></li>
                     </ul>
                 </div>

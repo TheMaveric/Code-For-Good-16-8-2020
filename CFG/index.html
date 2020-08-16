@@ -14,11 +14,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
+        
         .tableauPlaceholder {
             outline: 3px solid #d3d3d3;
             outline-offset: 5px;
         }
-        
+
         footer {
             margin-top: 0;
             padding: 50px 0;
@@ -36,7 +37,7 @@
         footer ul {
             list-style-type: none;
             text-decoration: none;
-            color: #0000ff;
+            color: #696767;
             font-size: 20px;
         }
 
@@ -46,7 +47,7 @@
 
         footer li a:hover, footer li a:focus {
             text-decoration: none;
-            color: #d3d3d3;
+            color: #696767;
             transform: scale(1.2);
         }
     </style>
@@ -57,12 +58,12 @@
     <header>
         <div class="main">
             <div class="logo">
-                <img src="img/logo.PNG">
+                <img src="img/logo.jpeg">
             </div>
             <ul>
-                <li class="active"><a href='index.html'>Home</a></li>
-                <li><a href='supply.html'>Supply</a></li>
-                <li><a href='demand.html'>Demand</a></li>
+                <li class="active"><a href='index.html'><i class="fa fa-home"></i> HOME</a></li>
+                <li><a href='supply.html'><i class="fa fa-bar-chart"></i> SUPPLY</a></li>
+                <li><a href='demand.html'><i class="fa fa-line-chart"></i> DEMAND</a></li>
             </ul>
         </div>
         <div class="title ">
@@ -70,7 +71,7 @@
 
         </div>
         <div class="button">
-            <a href="#about" class="btn" style="color: #00ffff; border: solid 3px #ffffff">READ MORE</a>
+            <a href="#about" class="btn bl" style="color: white; border: solid 3px #ffffff">READ MORE</a>
         </div>
     </header>
     <!------About------->
@@ -78,7 +79,7 @@
         <div class="container">
             <div class="row justify-content-around align-items-center">
                 <div class="col-11 col-md-6">
-                    <h1>About us</h1>
+                    <h1 style="color:black;margin-bottom:100px">About us</h1>
                     <div class="about-content">
                         <h2>Egg consumption has the potential to dramatically improve health and nutrition outcomes for
                             vulnerable populations.</h2>
@@ -88,7 +89,7 @@
                     </div>
                 </div>
                 <div class="col-11 col-md-6">
-                    <h1>Trend of Eggs</h1>
+                    <h1>Trend of Number of Eggs in Each Country</h1>
                     <div class="row justify-content-around">
                         <div class="col">
                             <div class='tableauPlaceholder' id='viz1597575424100' style='position: relative'>
@@ -124,28 +125,28 @@
         <div class="container">
             <h1>Our mission</h1>
             <div class="row services">
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" onclick="location.href='supply.html'">
                     <div class="icon">
                         <i class="fa fa-bar-chart"></i>
                     </div>
                     <h3>Supply</h3>
-                    <p>Sight and Life implements innovative approaches to increase egg production and consumption in
+                    <p style="font-size:medium">Sight and Life implements innovative approaches to increase egg production and consumption in
                         LMICs.</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" onclick="location.href='demand.html'">
                     <div class="icon">
                         <i class="fa fa-line-chart"></i>
                     </div>
                     <h3>Demand</h3>
-                    <p>Consumer preferences and dietary beliefs strongly influence demand for eggs in addition to
+                    <p style="font-size:medium">Consumer preferences and dietary beliefs strongly influence demand for eggs in addition to
                         non-availability and economic barriers.</p>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 text-center" >
                     <div class="icon">
                         <i class="fa fa-envira"></i>
                     </div>
-                    <h3>Science and Evnironment</h3>
-                    <p>Eggs are a high-density food product that provide besides high-quality protein significant
+                    <h3>Science and Environment</h3>
+                    <p style="font-size:medium">Eggs are a high-density food product that provide besides high-quality protein significant
                         amounts of essential vitamins, minerals and fatty acidy for human nutrition</p>
                 </div>
                 <div class="col-md-3 text-center">
@@ -153,7 +154,7 @@
                         <i class="fa fa-money"></i>
                     </div>
                     <h3>Economics</h3>
-                    <p>Poultry production in LMICs provides households with an important source of protein and income.
+                    <p style="font-size:medium">Poultry production in LMICs provides households with an important source of protein and income.
                     </p>
                 </div>
             </div>
@@ -161,25 +162,25 @@
 
     </section>
 
-    <footer class="bg-dark text-white">
+    <footer class=" text-white" style="background-color:#202020">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-11 col-md-4" id="quickLinks">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="supply.html"><i class="fas fa-cog"></i>Supply</a></li>
-                        <li><a href="demand.html"><i class="fas fa-list-alt"></i>Demand</a></li>
+                        <li><a href="index.html" style="color:white;"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="supply.html" style="color:white; "><i class="fas fa-cog"></i>Supply</a></li>
+                        <li><a href="demand.html" style="color:white;"><i class="fas fa-list-alt"></i>Demand</a></li>
                     </ul>
                 </div>
                 <div class="col-11 col-md-4" id="socialProfiles">
                     <h3>Social Profiles</h3>
                     <ul>
-                        <li><a href="https://www.facebook.com/SightandLife/"><i class="fab fa-facebook"></i>Facebook</a>
+                        <li><a href="https://www.facebook.com/SightandLife/" style="color:white;"><i class="fab fa-facebook"></i>Facebook</a>
                         </li>
-                        <li><a href="https://twitter.com/SightandLife"><i class="fab fa-twitter"></i>Twitter</a>
+                        <li><a href="https://twitter.com/SightandLife" style="color:white;"><i class="fab fa-twitter"></i>Twitter</a>
                         </li>
-                        <li><a href="https://www.instagram.com/sightandlife/"><i
+                        <li><a href="https://www.instagram.com/sightandlife/" style="color:white;"><i
                                     class="fab fa-instagram"></i>Instagram</a></li>
                     </ul>
                 </div>

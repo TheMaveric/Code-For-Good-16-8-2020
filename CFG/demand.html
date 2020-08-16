@@ -19,7 +19,7 @@
         .container {
             padding-top: 20px;
             width: 80%;
-            margin-right: 0.8%;
+            margin-right: 10%;
         }
 
         @media (max-width: 765.8px) {
@@ -59,7 +59,6 @@
             position: fixed;
             width: 20%;
             height: 100%;
-            background-color: #f0f0f0;
             box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.16), 2px 0 10px 0 rgba(0, 0, 0, 0.12);
             z-index: 1;
             overflow: auto;
@@ -78,14 +77,16 @@
 
         #side-nav-content a:focus,
         #side-nav-content a:hover {
-            background-color: #d5d5d5;
+            outline: 3px solid #ffffff;
+            outline-offset: -5px;
         }
 
         #side-nav-content a {
             padding: 3px 20px 3px 30px;
+            margin-top: 10px;
             display: block;
             font-size: 18px;
-            color: #000000;
+            color: #ffffff;
             text-decoration: none;
         }
 
@@ -112,7 +113,7 @@
         footer ul {
             list-style-type: none;
             text-decoration: none;
-            color: #0000ff;
+            color: #ffffff;
             font-size: 20px;
         }
 
@@ -123,7 +124,7 @@
         footer li a:hover,
         footer li a:focus {
             text-decoration: none;
-            color: #d3d3d3;
+            color: #ffffff;
             font-weight: 700;
             transform: scale(1.2);
         }
@@ -146,21 +147,22 @@
         <div class="collapse navbar-collapse text-right pr-2 pt-2 pt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+
+                    <a class="nav-link" href="index.html"><i class="fa fa-home"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="supply.html">Supply</a>
+                    <a class="nav-link" href="supply.html"><i class="fa fa-bar-chart"></i> Supply</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="demand.html">Demand</a>
+                    <a class="nav-link" href="demand.html"> <i class="fa fa-line-chart"></i> Demand</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 
-<body>
-    <div class="d-xs-none d-sm-none d-md-block" id="side-nav">
+<body style="background-color:#343a40!important">
+    <div class="d-xs-none d-sm-none d-md-block bg-secondary" id="side-nav">
         <div id="side-nav-content">
             <a href="#demand1">Total Population</a>
             <a href="#demand2">Malnutrition Data (stunting, anemia, wasting, undernutrition)</a>
@@ -171,7 +173,9 @@
     </div>
     <div class="container">
         <div id="demand1">
-            <h3>Total Population</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Total Population</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597578158783' style='position: relative'><noscript><a
@@ -201,7 +205,10 @@
     </div>
     <div class="container">
         <div id="demand2">
-            <h3>Malnutrition Data (stunting, anemia, wasting, undernutrition)</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Malnutrition Data (stunting, anemia, wasting,
+                    undernutrition)</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597577145349' style='position: relative'><noscript><a
@@ -230,7 +237,9 @@
     </div>
     <div class="container">
         <div id="demand3">
-            <h3>Protein Consumption</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Protein Consumption</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597565639048' style='position: relative'><noscript><a
@@ -262,7 +271,9 @@
     </div>
     <div class="container">
         <div id="demand4">
-            <h3>Egg Consumption per Person, per Year</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Egg Consumption per Person, per Year</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597572089609' style='position: relative'><noscript><a
@@ -293,7 +304,9 @@
     </div>
     <div class="container">
         <div id="demand5">
-            <h3>Retail Price of a Single Egg (in USD)</h3>
+            <h3>
+                <span class="bg-secondary rounded p-2 m-2 text-white">Retail Price of a Single Egg (in USD)</span>
+            </h3>
             <div class="row justify-content-around">
                 <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597568184838' style='position: relative'><noscript><a
@@ -321,25 +334,25 @@
         </div>
     </div>
 
-    <footer class="bg-dark text-white">
+    <footer class=" text-white" style="background-color:#202020">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-11 col-md-4" id="quickLinks">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
-                        <li><a href="supply.html"><i class="fas fa-cog"></i>Supply</a></li>
-                        <li><a href="demand.html"><i class="fas fa-list-alt"></i>Demand</a></li>
+                        <li><a href="index.html" style="color:white;"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="supply.html" style="color:white;"><i class="fas fa-cog"></i>Supply</a></li>
+                        <li><a href="demand.html" style="color:white;"><i class="fas fa-list-alt"></i>Demand</a></li>
                     </ul>
                 </div>
                 <div class="col-11 col-md-4" id="socialProfiles">
                     <h3>Social Profiles</h3>
                     <ul>
-                        <li><a href="https://www.facebook.com/SightandLife/"><i class="fab fa-facebook"></i>Facebook</a>
+                        <li><a href="https://www.facebook.com/SightandLife/" style="color:white;"><i class="fab fa-facebook"></i>Facebook</a>
                         </li>
-                        <li><a href="https://twitter.com/SightandLife"><i class="fab fa-twitter"></i>Twitter</a>
+                        <li><a href="https://twitter.com/SightandLife" style="color:white;"><i class="fab fa-twitter"></i>Twitter</a>
                         </li>
-                        <li><a href="https://www.instagram.com/sightandlife/"><i
+                        <li><a href="https://www.instagram.com/sightandlife/" style="color:white;"><i
                                     class="fab fa-instagram"></i>Instagram</a></li>
                     </ul>
                 </div>
