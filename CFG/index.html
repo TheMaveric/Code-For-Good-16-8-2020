@@ -14,7 +14,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <style>
+        .tableauPlaceholder {
+            outline: 3px solid #d3d3d3;
+            outline-offset: 5px;
+        }
+        
         footer {
+            margin-top: 0;
             padding: 50px 0;
             text-align: left;
         }
@@ -38,7 +44,7 @@
             padding: 10px;
         }
 
-        footer li a:hover {
+        footer li a:hover, footer li a:focus {
             text-decoration: none;
             color: #d3d3d3;
             transform: scale(1.2);
@@ -82,7 +88,7 @@
                     </div>
                 </div>
                 <div class="col-11 col-md-6">
-                    <h1>Trend</h1>
+                    <h1>Trend of Eggs</h1>
                     <div class="row justify-content-around">
                         <div class="col">
                             <div class='tableauPlaceholder' id='viz1597575424100' style='position: relative'>
@@ -154,8 +160,6 @@
         </div>
 
     </section>
-    <br>
-    <br>
 
     <footer class="bg-dark text-white">
         <div class="container">

@@ -10,18 +10,26 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <style>
         body {
             text-align: center;
-            background: #d3d3d3;
         }
 
         .container {
-            padding-top: 80px;
+            padding-top: 20px;
+            width: 80%;
+            margin-right: 0.8%;
+        }
+
+        @media (max-width: 765.8px) {
+            .container {
+                margin: auto;
+            }
         }
 
         #topNav {
-            position: absolute;
+            position: fixed;
             z-index: 1000;
             width: 100%;
         }
@@ -43,7 +51,47 @@
         }
 
         h3 {
+            padding-top: 80px;
             padding-bottom: 20px;
+        }
+
+        #side-nav {
+            position: fixed;
+            width: 20%;
+            height: 100%;
+            background-color: #f0f0f0;
+            box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.16), 2px 0 10px 0 rgba(0, 0, 0, 0.12);
+            z-index: 1;
+            overflow: auto;
+        }
+
+        #side-nav-content {
+            padding-top: 80px;
+            text-align: left;
+            width: auto;
+        }
+
+        #side-nav-content h3 {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        #side-nav-content a:focus,
+        #side-nav-content a:hover {
+            background-color: #d5d5d5;
+        }
+
+        #side-nav-content a {
+            padding: 3px 20px 3px 30px;
+            display: block;
+            font-size: 18px;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .tableauPlaceholder {
+            outline: 3px solid #d3d3d3;
+            outline-offset: 5px;
         }
 
         footer {
@@ -53,11 +101,12 @@
         }
 
         footer .container {
-            padding: 50px 0;
+            padding: 30px 0;
         }
 
         footer h3 {
-            font-size: 30px;
+            padding-top: 30px;
+            font-size: 27px;
         }
 
         footer ul {
@@ -71,7 +120,8 @@
             padding: 10px;
         }
 
-        footer li a:hover {
+        footer li a:hover,
+        footer li a:focus {
             text-decoration: none;
             color: #d3d3d3;
             font-weight: 700;
@@ -110,22 +160,32 @@
 </header>
 
 <body>
+    <div class="d-xs-none d-sm-none d-md-block" id="side-nav">
+        <div id="side-nav-content">
+            <a href="#demand1">Total Population</a>
+            <a href="#demand2">Malnutrition Data (stunting, anemia, wasting, undernutrition)</a>
+            <a href="#demand3">Protein Consumption</a>
+            <a href="#demand4">Egg Consumption per Person, per Year</a>
+            <a href="#demand5">Retail Price of a Single Egg (in USD)</a>
+        </div>
+    </div>
     <div class="container">
         <div id="demand1">
             <h3>Total Population</h3>
             <div class="row justify-content-around">
-                <div class="col-10 col-md-8">
-                    <div class='tableauPlaceholder' id='viz1597569215657' style='position: relative'><noscript><a
+                <div class="col-11">
+                    <div class='tableauPlaceholder' id='viz1597578158783' style='position: relative'><noscript><a
                                 href='#'><img alt=' '
-                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7B&#47;7BJHY4YTB&#47;1_rss.png'
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Population-Country&#47;Sheet1&#47;1_rss.png'
                                     style='border: none' /></a></noscript><object class='tableauViz'
                             style='display:none;'>
                             <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
                             <param name='embed_code_version' value='3' />
-                            <param name='path' value='shared&#47;7BJHY4YTB' />
+                            <param name='path'
+                                value='views&#47;Population-Country&#47;Sheet1?:language=en&amp;:embed=y&amp;:display_count=y&amp;publish=yes' />
                             <param name='toolbar' value='yes' />
                             <param name='static_image'
-                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7B&#47;7BJHY4YTB&#47;1.png' />
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Po&#47;Population-Country&#47;Sheet1&#47;1.png' />
                             <param name='animate_transition' value='yes' />
                             <param name='display_static_image' value='yes' />
                             <param name='display_spinner' value='yes' />
@@ -134,7 +194,7 @@
                             <param name='language' value='en' />
                             <param name='filter' value='publish=yes' /></object></div>
                     <script
-                        type='text/javascript'>                    var divElement = document.getElementById('viz1597569215657'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597578158783'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
                 </div>
             </div>
         </div>
@@ -142,14 +202,37 @@
     <div class="container">
         <div id="demand2">
             <h3>Malnutrition Data (stunting, anemia, wasting, undernutrition)</h3>
-
+            <div class="row justify-content-around">
+                <div class="col-11">
+                    <div class='tableauPlaceholder' id='viz1597577145349' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TD&#47;TDDTX5HMP&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path' value='shared&#47;TDDTX5HMP' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TD&#47;TDDTX5HMP&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597577145349'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
         <div id="demand3">
             <h3>Protein Consumption</h3>
             <div class="row justify-content-around">
-                <div class="col-10 col-md-8">
+                <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597565639048' style='position: relative'><noscript><a
                                 href='#'><img alt=' '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProteinConsumption_15975655776840&#47;Sheet1&#47;1_rss.png'
@@ -181,7 +264,7 @@
         <div id="demand4">
             <h3>Egg Consumption per Person, per Year</h3>
             <div class="row justify-content-around">
-                <div class="col-10 col-md-8">
+                <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597572089609' style='position: relative'><noscript><a
                                 href='#'><img alt=' '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Eg&#47;Eggconsumptionperpersonperyear&#47;Sheet1&#47;1_rss.png'
@@ -212,7 +295,7 @@
         <div id="demand5">
             <h3>Retail Price of a Single Egg (in USD)</h3>
             <div class="row justify-content-around">
-                <div class="col-10 col-md-8">
+                <div class="col-11">
                     <div class='tableauPlaceholder' id='viz1597568184838' style='position: relative'><noscript><a
                                 href='#'><img alt=' '
                                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;76&#47;769XNXPFX&#47;1_rss.png'
