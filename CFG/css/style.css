@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/egg-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+}
+ul li{
+    margin-top: 30px;
+    display: inline-block;
+
+}
+ul li a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border:1px solid transparent;
+    transition:0.6s ease;
+}
+ul li a:hover{
+    background-color:#fff;
+    color:#000;
+}
+ul li.active a{
+    background-color:#fff;
+    color:#000;
+
+
+}
+.logo img{
+    margin-top:20px;
+    float:left;
+    width:150px;
+    height:auto;
+}
+.main{
+    max-width:1200px;
+    margin:auto;
+
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%,-50%);
+
+}
+.title h1{
+    color: white;
+    font-size:70px;
+
+}
+.button{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border:1px solid #fff;
+    padding:10px 30px;
+    color:#fff;
+    text-decoration:none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color:#fff;
+    color:#000;
+}
+
+/*----------About---------*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    columns: #000000;;
+}
+#about h1{
+    text-align: center;
+    color:#460e0e !important;
+    padding-bottom: 10px;
+}
+#about h2{
+    
+    color:#966214 !important;
+    padding-bottom: 10px;
+}
+#about h1::after{
+    content:' ';
+    background:#1aa849;
+    display: block;
+    height:3px;
+    width: 170px;
+    margin:20px auto 5px;
+
+}
+#about .btn
+{
+    margin-top:20px;
+    margin-bottom:30px;
+
+}
+#about .btn{
+    border:1px solid #fff;
+    padding:10px 30px;
+    color:#fff;
+    text-decoration:none;
+    transition: 0.6s ease;
+}
+.about-content
+{
+    padding-top:20px;
+}
+.skils-bar p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    
+    border-radius: 16px!important;
+    margin-bottom:20px;
+}
+/*-----------Services-------------*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../img/egg.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#efefef !important;
+    background-attachment:fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+#services h1{
+    text-align: center;
+    color:#efefef !important;
+    padding-bottom: 10px;
+}
+#services h1::after{
+    content:' ';
+    background:#efefef;
+    display: block;
+    height:3px;
+    width: 170px;
+    margin:20px auto 5px;
+
+}
+.services
+{
+    margin-top:40px;
+}
+.icon
+{
+    font-size: 40px ;
+    margin:20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    
+}
+#services p{
+    font-size: 14px;
+    margin-top: 20px;
+    color:#ccc;
+}
+.services .col-md-3:hover{
+    background:#86704C;
+    color:#000;
+    cursor:pointer;
+    transition:0.7s;
+}
+.services .col-md-3:hover a:hover{
+    background-color:#fff;
+    color:#000;
+}
