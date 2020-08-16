@@ -10,7 +10,74 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            text-align: center;
+            background: #d3d3d3;
+        }
+
+        .container {
+            padding-top: 80px;
+        }
+
+        #topNav {
+            position: absolute;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 17px;
+        }
+
+        .navbar .navbar-nav .nav-link:hover,
+        .navbar .navbar-nav .nav-link:focus {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 600;
+        }
+
+        .navbar .navbar-nav .active>.nav-link {
+            color: rgba(255, 255, 255, 1);
+            font-weight: 700;
+        }
+
+        h3 {
+            padding-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 50px 0;
+            text-align: left;
+        }
+
+        footer .container {
+            padding: 50px 0;
+        }
+
+        footer h3 {
+            font-size: 30px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            text-decoration: none;
+            color: #0000ff;
+            font-size: 20px;
+        }
+
+        footer i {
+            padding: 10px;
+        }
+
+        footer li a:hover {
+            text-decoration: none;
+            color: #d3d3d3;
+            font-weight: 700;
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 
 <header>
@@ -29,7 +96,7 @@
         <div class="collapse navbar-collapse text-right pr-2 pt-2 pt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="home.html">Home</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="supply.html">Supply</a>
@@ -45,8 +112,31 @@
 <body>
     <div class="container">
         <div id="demand1">
-            <h3>Toatal Population</h3>
-
+            <h3>Total Population</h3>
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-8">
+                    <div class='tableauPlaceholder' id='viz1597569215657' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7B&#47;7BJHY4YTB&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path' value='shared&#47;7BJHY4YTB' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;7B&#47;7BJHY4YTB&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597569215657'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -58,44 +148,116 @@
     <div class="container">
         <div id="demand3">
             <h3>Protein Consumption</h3>
-            
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-8">
+                    <div class='tableauPlaceholder' id='viz1597565639048' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProteinConsumption_15975655776840&#47;Sheet1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='ProteinConsumption_15975655776840&#47;Sheet1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;ProteinConsumption_15975655776840&#47;Sheet1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597565639048'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
 
         </div>
     </div>
     <div class="container">
         <div id="demand4">
             <h3>Egg Consumption per Person, per Year</h3>
-
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-8">
+                    <div class='tableauPlaceholder' id='viz1597572089609' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Eg&#47;Eggconsumptionperpersonperyear&#47;Sheet1&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='site_root' value='' />
+                            <param name='name' value='Eggconsumptionperpersonperyear&#47;Sheet1' />
+                            <param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Eg&#47;Eggconsumptionperpersonperyear&#47;Sheet1&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597572089609'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
         <div id="demand5">
             <h3>Retail Price of a Single Egg (in USD)</h3>
-
+            <div class="row justify-content-around">
+                <div class="col-10 col-md-8">
+                    <div class='tableauPlaceholder' id='viz1597568184838' style='position: relative'><noscript><a
+                                href='#'><img alt=' '
+                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;76&#47;769XNXPFX&#47;1_rss.png'
+                                    style='border: none' /></a></noscript><object class='tableauViz'
+                            style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                            <param name='embed_code_version' value='3' />
+                            <param name='path' value='shared&#47;769XNXPFX' />
+                            <param name='toolbar' value='yes' />
+                            <param name='static_image'
+                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;76&#47;769XNXPFX&#47;1.png' />
+                            <param name='animate_transition' value='yes' />
+                            <param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' />
+                            <param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' />
+                            <param name='language' value='en' />
+                            <param name='filter' value='publish=yes' /></object></div>
+                    <script
+                        type='text/javascript'>                    var divElement = document.getElementById('viz1597568184838'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer class="bg-dark text-white">
         <div class="container">
             <div class="row justify-content-around">
-                <div class="col-11 col-md-6 col-lg-4" id="abountUs">
-                    <h3>About Us</h3>
-                    <p>...</p>
-                </div>
-                <div class="col-11 col-md-6 col-lg-4" id="quickLinks">
+                <div class="col-11 col-md-4" id="quickLinks">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="supply.html">Supply</a></li>
-                        <li><a href="demand.html">Demand</a></li>
+                        <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                        <li><a href="supply.html"><i class="fas fa-cog"></i>Supply</a></li>
+                        <li><a href="demand.html"><i class="fas fa-list-alt"></i>Demand</a></li>
                     </ul>
                 </div>
-                <div class="col-11 col-md-6 col-lg-4" id="socialProfiles">
+                <div class="col-11 col-md-4" id="socialProfiles">
                     <h3>Social Profiles</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.facebook.com/SightandLife/"><i class="fab fa-facebook"></i>Facebook</a>
+                        </li>
+                        <li><a href="https://twitter.com/SightandLife"><i class="fab fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/sightandlife/"><i
+                                    class="fab fa-instagram"></i>Instagram</a></li>
                     </ul>
                 </div>
             </div>
