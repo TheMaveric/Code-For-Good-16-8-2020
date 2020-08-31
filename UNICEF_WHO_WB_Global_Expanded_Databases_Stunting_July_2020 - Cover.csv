@@ -1,0 +1,90 @@
+,
+,
+,
+,
+Indicator Name:,Height-for-age <-2SD (Stunting)
+Indicator Definitions,Percentage of under-fives falling below minus 2 standard deviations (moderate and severe)  from the median height-for-age of the reference population1
+Numerator:,Number of under-fives falling below minus 2 standard deviations (moderate and severe) from the median height-for-age of the reference population1
+Denominator:,Children under 5 years of age in the surveyed population
+1. WHO Child Growth Standards 2006 ,
+,
+Suggested Citation:,"UNICEF/WHO/World Bank Joint Child Malnutrition Estimates Expanded Database: Stunting, July 2020, New York"
+,
+Last update,July 2020
+,
+Glossary - the database in the second tab contains the following,
+,
+ISO,"Three-digit alphabetical codes International Standard ISO 3166-1 assigned by the International Organization for Standardization (ISO). The latest version is available online a thttp://www.iso.org/iso/home/standards/country_codes.htm.
+"
+,
+Countries and areas,The UNICEF Global databases contain a set of 202 countries as reported on through the State of the World's Children Statistical Annex 2017
+,
+UNICEF Regions,
+EAP,East Asia and the Pacific
+EECA,Eastern Europe and Central Asia
+ESA,East and Southern Africa
+LAC,Latin America and the Caribbean
+MENA,Middle East and North Africa
+NA,North America
+SA,South Asia
+WCA,West and Central Africa
+WE,Western Europe
+,
+Survey Years,Represents the year(s) in which the data collection (e.g. survey interviews) took place
+,
+Year*,Year assigned to each survey
+,"For more information, consult the Notes on the Data and Methodology in the Key Findings Report"
+,
+Short Source,Short source for major survey types.
+DHS,Demographic and Health Survey (from the official Demographic and Health Survey Programme available at https://dhsprogram.com/)
+DHS-style or MICS-style survey,Survey with MICS or DHS in the titled but which is not and official MICS or DHS/not available at the above websites
+LSMS,The Living Standards Measurement Study (from official World Bank Group supported surveys available at: http://iresearch.worldbank.org/lsms/lsmssurveyFinder.htm)
+MICS,Multiple Indicator Cluster Survey (from official UNICEF-supported surveys available at http://mics.unicef.org/)
+NNS,National Nutrition Survey
+SMART,Standardized Monitoring and Assessment of Relief and Transitions
+Nutrition Surveillance,Estimates originating from nutrition monitoring and surveillance systems which are nationally representative
+ONS,Other National Survey
+PAPFAM,Pan Arab Project for Family Health survey
+,
+Full Source,Full title of the data source report
+,
+Estimate Type,"The source of the estimate, whether as reported, reanalyzed, etc."
+Reanalyzed,"Dataset has been obtained, standardized and reanalyzed to conform to the definition. Lower and Upper Confidence limits are based on a 95% confidence level"
+External Reanalysis,Dataset reanalyzed by external partners
+Reported,"Point Estimate, and when available, other information including sample size, Lower and Upper Confidence limits, are based on results from report"
+,
+Point Estimate,The prevalence of the stunting (moderate and severe) in the population
+Lower Limit,95% lower confidence interval of the point estimate
+Upper Limit,95% upper confidence interval of the point estimate
+Sample size,The weighted sample size which the point estimate is based on
+,
+Footnote,A variety of notes that relate to the point estimates as follows:
+a,Alternate definition (Numbered footnote contains details)
+b,Age-adjusted estimate
+c,Converted estimate
+d,Adjusted National-Rural to National
+p,Age calculated using century month codes or recovered through seasonal calendar
+q,Oedema data were collected in the survey and considered in the analysis
+r,Height/length modality (standing/lying) was not collected
+s,Oedema data was collected in the survey and not considered in the analysis
+y,"Unweighted sample size is less than 25, point estimate, lower limit and upper limit have been suppressed"
+z,Unweighted sample size is between 25 and 49 
+Numbered notes,"All numbered notes can be found in the ""Notes"" tab"
+,
+Standard errors as well as weighted and unweighted numerators and denominators can be requested at data@unicef.org,
+,
+Background Characteristics,"Where available, the point estimates and other parameters are presented by a variety of background characteristics including (i) sex (male and female); (ii) area of residence (urban and rural); (iii) wealth quintiles (based on asset-based wealth scores); (iv) mother's education; (v) Alternate wealth breakdowns (ie. not quintiles); and (vi)  geographic area of residence."
+National,
+Sex,
+Residence,
+Age Group,
+Wealth Quintile,
+Wealth Quintile Grouping,
+Mother's Education,
+Area / Wealth Quintile,
+Area / Wealth Quintile Grouping,
+Sex / Age Group,
+Subnational Region,
+,
+Disclaimer,
+All reasonable precautions have been taken to verify the information in this database. In no event shall UNICEF be liable for damages arising from its use or interpretation,
